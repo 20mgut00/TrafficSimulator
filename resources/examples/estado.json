@@ -1,0 +1,87 @@
+{
+   "report": {
+      "time": 110,
+      "state": {
+         "road": [
+            {
+               "speedlimit": 120,
+               "co2": 32396,
+               "weather": "SUNNY",
+               "vehicles": ["v1"],
+               "id": "r1"
+            },
+            {
+               "speedlimit": 120,
+               "co2": 6392,
+               "weather": "STORM",
+               "vehicles": ["v2"],
+               "id": "r2"
+            },
+            {
+               "speedlimit": 120,
+               "co2": 0,
+               "weather": "SUNNY",
+               "vehicles": [],
+               "id": "r3"
+            }
+         ],
+         "vehicles": [
+            {
+               "distance": 8228,
+               "road": "r1",
+               "co2": 32614,
+               "location": 8228,
+               "id": "v1",
+               "class": 5,
+               "speed": 65,
+               "status": "TRAVELING"
+            },
+            {
+               "distance": 5500,
+               "road": "r2",
+               "co2": 6600,
+               "location": 5500,
+               "id": "v2",
+               "class": 3,
+               "speed": 50,
+               "status": "TRAVELING"
+            }
+         ],
+         "junctions": [
+            {
+               "green": "none",
+               "queues": [],
+               "id": "j1"
+            },
+            {
+               "green": "none",
+               "queues": [],
+               "id": "j2"
+            },
+            {
+               "green": "r2",
+               "queues": [
+                  {
+                     "road": "r1",
+                     "vehicles": []
+                  },
+                  {
+                     "road": "r2",
+                     "vehicles": []
+                  }
+               ],
+               "id": "j3"
+            },
+            {
+               "green": "r3",
+               "queues": [{
+                  "road": "r3",
+                  "vehicles": []
+               }],
+               "id": "j4"
+            }
+         ]
+      }
+   },
+   "ficheroIni": "C:\\Users\\belen\\OneDrive\\Documentos\\src\\TrafficSimulatorTP\\resources\\examples\\ex1.json"
+}
